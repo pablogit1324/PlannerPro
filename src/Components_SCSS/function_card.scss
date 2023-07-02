@@ -1,0 +1,47 @@
+@import "variables";
+.card{
+  width: 45rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border_card{
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(255,255,255, .2);
+  border-radius: 1rem;
+}
+.text_card{
+  width: 25rem;
+  padding-left: 2rem;
+}
+.image_card{
+  width: 10rem;
+  height: 10rem;
+
+}
+
+.heading_text{
+  font-family: $font-roboto;
+  color: white;
+  font-size: 2rem;
+
+}
+.heading_description{
+  font-family: $font-roboto;
+  color: rgba(255,255,255, .6);
+font-size: 1.2rem;
+}
+.border_card {
+  position: relative;
+}
+
+.image_card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 7rem;
+  height: 7rem;
+}

@@ -1,0 +1,50 @@
+@import "variables";
+
+.info {
+  width: 73rem;
+  height: 10rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: 10rem;
+}
+
+.info_border {
+  width: 8rem;
+  height: 8rem;
+  background-color: $color-secondary;
+  border-radius: 2rem;
+  position: relative;
+  box-shadow: 0 0 1rem 0 rgba(000,000,000, 0.5);
+}
+
+.info_border_image {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info_image {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.info_text{
+  margin-left: 3rem;
+}
+
+.info_text_heading {
+  font-size: 2.4rem;
+  font-family: $font-roboto;
+  color: #000000;
+}
+
+.info_text_description {
+  color: $color-description;
+  font-family: $font-roboto;
+  font-size: 1.6rem;
+}

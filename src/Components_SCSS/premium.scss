@@ -1,0 +1,37 @@
+@import "variables";
+
+.premium {
+  background-color: #FFF2EA;
+}
+
+.pre {
+  display: flex;
+}
+
+.premium_image {
+  width: 50rem;
+  height: 60rem;
+}
+
+.premium_box {
+
+  align-self: center;
+  justify-content: left;
+
+}
+
+.premium_box_text {
+  display: flex;
+  margin-left: 10rem;
+}
+
+.premium_heading_text {
+  font-size: 4rem;
+  font-family: $font-roboto;
+  font-weight: 900;
+
+}
+
+.heading_orange {
+  color: $color-primary;
+}

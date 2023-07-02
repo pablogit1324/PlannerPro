@@ -1,0 +1,15 @@
+@import "variables";
+
+.box_heading_text{
+  font-family: $font-roboto;
+  font-size: 1.6rem;
+  color: #00052E;
+}
+
+.box_link{
+  font-family: $font-roboto;
+  font-size: 1.2rem;
+  color: $color-description;
+  margin-top: 1.5rem;
+  display: block;
+}

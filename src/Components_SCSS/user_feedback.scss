@@ -1,0 +1,24 @@
+@import "variables";
+
+.feedback_box{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.feedback_box_heading{
+text-align: center;
+}
+.feedback_heading_text{
+  font-family: $font-roboto;
+  font-size: 3.2rem;
+}
+.feedback_heading_description{
+  color: #8A8A8A;
+  font-size: 1.6rem;
+
+}
+.feedback_user_box{
+  margin-top: 5rem;
+  width: 100rem;
+  height: 26rem;
+  display: flex;
+}

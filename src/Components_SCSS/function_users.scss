@@ -1,0 +1,30 @@
+@import "variables";
+
+.feedback {
+  width: 30rem;
+  height: 15rem;
+  box-shadow: 0 0 20px 0 rgba(000,000,000, .2);
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 100rem;
+}
+
+.feedback_box_text {
+  font-family: $font-roboto;
+  color: $color-description;
+  font-size: 1.2rem;
+  text-align: left;
+
+}
+.feedback_box_user{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.feedback_box_user_info{
+  margin-left: 1rem;
+  display: block;
+}
+.feedback_box_user_info_rank{
+  color: $color-description;
+}
