@@ -6,9 +6,18 @@ import calendar from "../img/Calendar.png"
 import exam from "../img/exam 1.png"
 import image from "../img/image.png"
 import {Link} from 'react-scroll'
+import {useNavigate} from "react-router-dom";
 
 
 function Header({onToggleComponents}) {
+
+
+    const
+        navigate = useNavigate()
+
+    const onClick = () => {
+        navigate('/Login')
+    }
     return (
         <>
             <div id="header">
@@ -21,7 +30,7 @@ function Header({onToggleComponents}) {
                             <Link to="header" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
                             <Link to="feedback_box" spy={true} smooth={true} offset={50} duration={500}>About us</Link>
                             <Link to="footer_box" spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
-                            <button className='btn_app' onClick={onToggleComponents}>App</button>
+                            <button className='btn_app' onClick={onClick}>App</button>
 
                         </div>
                     </div>
