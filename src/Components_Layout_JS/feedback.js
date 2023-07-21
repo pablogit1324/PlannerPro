@@ -1,6 +1,6 @@
 import React from "react";
 import Feedback from "./Feedback"
-import "../Components_SCSS/user_feedback.scss"
+import "../Components_Layout_SCSS/user_feedback.scss"
 import user1 from "../img/Ellipse 34.png"
 import user2 from "../img/Ellipse 34(1).png"
 import user3 from "../img/Ellipse 34(2).png"

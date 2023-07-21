@@ -1,13 +1,14 @@
-import * as React from 'react';
-import '../Components_SCSS/header.scss';
-import '../Components_SCSS/main.scss';
+import React from 'react';
+import '../Components_Layout_SCSS/header.scss';
+import '../Components_Layout_SCSS/main.scss';
 import MediaCard from "./Header";
 import calendar from "../img/Calendar.png"
 import exam from "../img/exam 1.png"
 import image from "../img/image.png"
 import {Link} from 'react-scroll'
 
-function Header() {
+
+function Header({onToggleComponents}) {
     return (
         <>
             <div id="header">
@@ -20,9 +21,8 @@ function Header() {
                             <Link to="header" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
                             <Link to="feedback_box" spy={true} smooth={true} offset={50} duration={500}>About us</Link>
                             <Link to="footer_box" spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
-                            <button className="btn_app" onClick={next}>
-                                App
-                            </button>
+                            <button className='btn_app' onClick={onToggleComponents}>App</button>
+
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,5 @@ function Header() {
     );
 }
 
-function next() {
-    document.getElementById('layout').style.display = "none"
 
-}
-
-
-export default Header;
+export default Header

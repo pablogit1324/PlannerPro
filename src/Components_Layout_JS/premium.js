@@ -1,5 +1,5 @@
 import React from "react";
-import "../Components_SCSS/premium.scss"
+import "../Components_Layout_SCSS/premium.scss"
 import PremiumInfo from "./Premium";
 import bell from "../img/bell.png"
 import element from "../img/jigsaw 1.png"

@@ -1,6 +1,6 @@
 import * as React from "react";
-import "../Components_SCSS/main.scss"
-import "../Components_SCSS/media.scss";
+import "../Components_Layout_SCSS/main.scss"
+import "../Components_Layout_SCSS/media.scss";
 import instagram from "../img/Group 1.png"
 
 

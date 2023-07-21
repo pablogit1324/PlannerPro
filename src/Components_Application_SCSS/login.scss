@@ -1,0 +1,86 @@
+@import "src/Components_Layout_SCSS/variables";
+
+.application {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+}
+
+.application_bg {
+  background-color: white;
+  width: 90rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-radius: 2rem;
+  box-shadow: 0 0 .3rem .1rem rgba(000, 000, 000, .5);
+}
+
+#Box_SignIn {
+  width: 80rem;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.SignIn_bg {
+  width: 50%;
+  height: 100%;
+
+}
+
+.SignIn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.css-input {
+  margin-top: 3rem;
+  padding: 5px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0;
+  box-shadow: 0 0 5px rgba(66, 66, 66, .75);
+
+}
+
+.css-input:focus {
+  outline: none;
+}
+
+.btn_back_log_in {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: $color-primary;
+  border-radius: 1rem;
+  color: white;
+  font-family: $font-roboto;
+  font-weight: 800;
+}
+
+.btn_landing {
+  padding: 1rem;
+  background-color: $color-secondary;
+  border-radius: 1rem;
+  color: white;
+  font-family: $font-roboto;
+  font-weight: 800;
+position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}

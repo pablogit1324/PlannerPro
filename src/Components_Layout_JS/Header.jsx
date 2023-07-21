@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../Components_SCSS/function_card.scss'
+import '../Components_Layout_SCSS/function_card.scss'
 
 export default function MediaCard({headingText, description, image}) {
     return (

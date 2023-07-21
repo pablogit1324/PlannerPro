@@ -1,19 +1,22 @@
 @import "src/Components_Layout_SCSS/variables";
-.sign_in_heading_text{
+
+.sign_up_heading_text {
   font-size: 2.2rem;
-  font-family: $font-roboto ;
+  font-family: $font-roboto;
   font-weight: bolder;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
 }
-.sign_in_create_text{
+
+.sign_up_create_text {
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
   margin-top: 3rem;
 }
-.btn_log_in{
+
+.btn_log_up {
   margin-top: 3rem;
   width: 100%;
   padding: 1rem;
@@ -23,9 +26,35 @@
   font-family: $font-roboto;
   font-weight: 800;
 }
-.btn_create{
- color: #279574;
+
+.btn_create {
+  color: #279574;
   font-family: $font-roboto;
   font-weight: 800;
 
+}
+
+.password {
+  padding-top: 1rem;
+
+}
+
+.info_users {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, .1);
+  z-index: 3;
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+}
+.SignIn_bg {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img/BusinessPlanning.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50rem;
 }

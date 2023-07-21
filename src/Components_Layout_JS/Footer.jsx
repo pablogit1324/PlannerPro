@@ -1,5 +1,5 @@
 import React from "react";
-import "../Components_SCSS/function_footer.scss"
+import "../Components_Layout_SCSS/function_footer.scss"
 
 export default function FooterBox({headingText, link1, link2, link3, href1, href2, href3}) {
     return (

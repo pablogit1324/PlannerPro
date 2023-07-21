@@ -1,5 +1,5 @@
 import React from "react";
-import "../Components_SCSS/function_premium.scss"
+import "../Components_Layout_SCSS/function_premium.scss"
 
 export default function PremiumInfo({heading, text, image}) {
     return (

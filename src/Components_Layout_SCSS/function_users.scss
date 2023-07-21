@@ -7,7 +7,13 @@
   padding: 1rem;
   border-radius: .5rem;
   margin-bottom: 100rem;
+&:hover{
+ scale: 1.07;
+  transition: ease-in 500ms;
+  z-index: 1;
 }
+}
+
 
 .feedback_box_text {
   font-family: $font-roboto;

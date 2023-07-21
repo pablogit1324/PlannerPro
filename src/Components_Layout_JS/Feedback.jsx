@@ -1,5 +1,5 @@
 import React from "react";
-import "../Components_SCSS/function_users.scss"
+import "../Components_Layout_SCSS/function_users.scss"
 
 export default function Feedback({description, image, name, rank}) {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import FooterBox from "./Footer"
-import "../Components_SCSS/footer.scss"
+import "../Components_Layout_SCSS/footer.scss"
 
 export default function Footer() {
     return (
@@ -25,7 +25,7 @@ export default function Footer() {
                         </div>
                         <div className="footer_contain_nav1">
                             <FooterBox
-                                heading_text={"Home"}
+                                headingText={"Home"}
                                 link1={"Home"}
                                 link2={"About App"}
                                 link3={"Contact us"}/>
@@ -33,7 +33,7 @@ export default function Footer() {
                         </div>
                         <div className="footer_contain_nav2">
                             <FooterBox
-                                heading_text={"Contact Info"}
+                                headingText={"Contact Info"}
                                 link1={"000-000-000"}
                                 link2={"halama.pawel@gmail.com"}
                                 link3={"Prosta 00, 00-838 Warszawa"}/>

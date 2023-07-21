@@ -1,23 +1,39 @@
-import React from 'react';
-import Header from './Components_JS/header.js';
-import Media from "./Components_JS/media";
-import Premium from "./Components_JS/premium";
-import UserFeedback from "./Components_JS/user_feedback";
-import Footer from "./Components_JS/footer"
-import "./Components_SCSS/main.scss";
+import React, {useState} from 'react';
+import Header from './Components_Layout_JS/header.js';
+import Premium from "./Components_Layout_JS/premium";
+import Media from "./Components_Layout_JS/media";
+import UserFeedback from "./Components_Layout_JS/feedback";
+import Footer from "./Components_Layout_JS/footer";
+import "./Components_Layout_SCSS/main.scss";
+import Login from "./Components_Application_JS/login";
 
-function App() {
+
+const MyComponent = () => {
+    const [isLayoutVisible, setIsLayoutVisible] = useState(true);
+
+    function toggleComponents() {
+        setIsLayoutVisible((prevState) => !prevState);
+    }
+
     return (
-        <>
-            <Header/>
-            <Media/>
-            <Premium/>
-            <UserFeedback/>
-            <Footer/>
+        <div>
+            {isLayoutVisible ? (
+                <div id="layout">
+                    <Header onToggleComponents={toggleComponents}/>
+                    <Media/>
+                    <Premium/>
+                    <UserFeedback/>
+                    <Footer/>
+                </div>
+            ) : (
+                <>
+                    <div id="application">
+                        <Login onToggleComponents={toggleComponents}/>
+                    </div>
+                </>
+            )}
 
-
-        </>
+        </div>
     );
-}
-
-export default App;
+};
+export default MyComponent;
