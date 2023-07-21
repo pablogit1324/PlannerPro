@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixin";
 .feedback {
   width: 30rem;
   height: 15rem;
@@ -27,4 +27,11 @@
 }
 .feedback_box_user_info_rank{
   color: $color-description;
+}
+
+
+@include mobile{
+.feedback{
+  margin: 1rem auto;
+}
 }

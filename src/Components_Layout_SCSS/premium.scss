@@ -1,6 +1,7 @@
 @import "variables";
+@import "mixin";
 
-.premium {
+#premium {
   background-color: #FFF2EA;
 }
 
@@ -34,4 +35,25 @@
 
 .heading_orange {
   color: $color-primary;
+}
+
+@include mobile {
+  .premium_image {
+    display: none;
+  }
+  .premium_heading_text {
+    position: relative;
+    left: -5%;
+    width: 100%
+  }
+}
+
+@include tablet {
+  .premium_image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
 }

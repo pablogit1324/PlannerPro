@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixin";
 .info {
   width: 73rem;
   height: 10rem;
@@ -47,4 +47,35 @@
   color: $color-description;
   font-family: $font-roboto;
   font-size: 1.6rem;
+}
+
+@include mobile{
+
+  .info{
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1rem ;
+
+  }
+
+  .info_text_description{
+    max-width: 80%;
+  }
+}
+@include tablet{
+  .info{
+    max-width: 100%;
+    height: auto;
+    padding: 1rem ;
+    display: flex;
+    margin-left: 10rem;
+
+  }
+.info_text{
+}
+  .info_text_description{
+    max-width: 80%;
+
+  }
 }

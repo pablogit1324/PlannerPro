@@ -1,0 +1,31 @@
+@import "src/Components_Layout_SCSS/variables";
+.sign_in_heading_text{
+  font-size: 2.2rem;
+  font-family: $font-roboto ;
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.sign_in_create_text{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+.btn_log_in{
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #279574;
+  border-radius: 1rem;
+  color: white;
+  font-family: $font-roboto;
+  font-weight: 800;
+}
+.btn_create{
+ color: #279574;
+  font-family: $font-roboto;
+  font-weight: 800;
+
+}

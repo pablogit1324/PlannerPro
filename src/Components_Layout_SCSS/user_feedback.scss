@@ -1,6 +1,6 @@
 @import "variables";
-
-.feedback_box{
+@import "mixin";
+#feedback_box{
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
@@ -21,4 +21,24 @@ text-align: center;
   width: 100rem;
   height: 26rem;
   display: flex;
+}
+@include tablet{
+  .feedback_box_heading{
+    max-width: 100%;
+  }
+  .feedback_user_box{
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+@include mobile{
+  .feedback_box_heading{
+    max-width: 100%;
+  }
+  .feedback_user_box{
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  }
 }
