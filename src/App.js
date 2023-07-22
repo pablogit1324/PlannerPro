@@ -8,7 +8,7 @@ import Calendar from "./Components_Application_JS/calendar";
 import HomePage from "./Components_Layout_JS/HomePage";
 import AuthContextProvider from "./Auth_firebase/AuthContext";
 import RequireAuth from "./Auth_firebase/RequireAuth";
-
+import Error from "./404"
 const MyComponent = () => {
 
 
@@ -22,8 +22,10 @@ const MyComponent = () => {
                         <Route path="signup" element={<SignUp/>}/>
                     </Route>
                     <Route path="/app" element={<RequireAuth/>}>
-                        <Route index element={<Calendar/>}/>
+                        <Route index element={<Calendar/>}>
+                        </Route>
                     </Route>
+                    <Route path="*" element={<Error/>}/>
                 </Routes>
             </Router>
         </AuthContextProvider>

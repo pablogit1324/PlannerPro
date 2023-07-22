@@ -50,6 +50,7 @@
   left: 50%;
 
 }
+
 .SignIn_bg {
   width: 50%;
   height: 100%;
@@ -57,4 +58,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50rem;
+}
+
+.btn_back_log_in {
+  position: relative;
+  bottom: -2rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-family: $font-roboto;
+  font-weight: 800;
+  text-decoration: none;
 }
