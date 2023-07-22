@@ -4,6 +4,7 @@ import {auth} from '../firebase'
 import '../Components_Application_SCSS/SignIn.scss'
 import Swal from "sweetalert2";
 import {Link, useNavigate} from "react-router-dom";
+import useAuth from "./useAuth";
 
 
 
@@ -11,10 +12,11 @@ const SignIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate()
+    const {setAuthUser} = useAuth()
     const signIn = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
-            .then((log) => {
+            .then((userCredential) => {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
@@ -22,6 +24,7 @@ const SignIn = () => {
                     showConfirmButton: false,
                     timer: 1500,
                 });
+                setAuthUser(userCredential.user.email)
                 navigate("/app")
 
             })

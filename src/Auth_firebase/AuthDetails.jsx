@@ -9,7 +9,6 @@ const AuthDetails = () => {
     useEffect(() => {
         const listen = onAuthStateChanged(auth, (user) => {
             if (user) {
-                console.log({s})
                 setAuthUser(user)
             } else {
                 setAuthUser(null)

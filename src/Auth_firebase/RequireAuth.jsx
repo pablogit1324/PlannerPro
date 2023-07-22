@@ -6,7 +6,11 @@ function RequireAuth() {
 
     const {authUser} = useAuth()
     const navigate = useNavigate()
-    console.log(authUser)
+    useEffect(() => {
+        if (!authUser) {
+            navigate("/login/signin")
+        }
+    }, [])
 
     return (
 <Outlet />
