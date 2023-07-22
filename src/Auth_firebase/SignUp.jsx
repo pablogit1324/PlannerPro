@@ -4,6 +4,8 @@ import {auth} from '../firebase'
 import '../Components_Application_SCSS/SignUp.scss'
 import PasswordStrengthBar from 'react-password-strength-bar';
 import Swal from 'sweetalert2'
+import {Link} from "react-router-dom";
+
 
 
 const SignUp = () => {
@@ -56,6 +58,8 @@ const SignUp = () => {
                     </div>
                     <br/>
                     <button type="submit" className={'btn_log_up'}>Create</button>
+                    <Link to="signIn" className='btn_back_log_in'>Back to Login</Link>
+
 
                 </form>
             </div>

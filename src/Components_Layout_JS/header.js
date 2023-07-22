@@ -16,7 +16,7 @@ function Header({onToggleComponents}) {
         navigate = useNavigate()
 
     const onClick = () => {
-        navigate('/Login')
+        navigate('/login/signin')
     }
     return (
         <>

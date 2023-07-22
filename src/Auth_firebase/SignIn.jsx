@@ -3,12 +3,14 @@ import React, {useState} from "react";
 import {auth} from '../firebase'
 import '../Components_Application_SCSS/SignIn.scss'
 import Swal from "sweetalert2";
-import Calendar from "../Components_Application_JS/calendar";
+import {Link, useNavigate} from "react-router-dom";
+
+
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const navigate = useNavigate()
     const signIn = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
@@ -20,12 +22,7 @@ const SignIn = () => {
                     showConfirmButton: false,
                     timer: 1500,
                 });
-
-                return (
-                    <div>
-                     <Calendar />
-                    </div>
-                );
+                navigate("/app")
 
             })
             .catch(() => {
@@ -50,7 +47,7 @@ const SignIn = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <br />
+                <br/>
                 <input
                     className={'css-input'}
                     type='password'
@@ -58,7 +55,10 @@ const SignIn = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <br />
+                <br/>
+                <p className='sign_in_create_text'>Don't have an account yet?
+                    <Link to={"/login/signup"} className='btn_create'>&nbsp;Create Account</Link>
+                </p>
                 <button type='submit' className={'btn_log_in'}>
                     Log in
                 </button>

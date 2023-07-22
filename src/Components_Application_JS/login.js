@@ -1,16 +1,10 @@
-import React, {useState} from "react";
 import '../Auth_firebase/SignIn'
 import '../Components_Application_SCSS/login.scss'
-import SignIn from "../Auth_firebase/SignIn";
-import SignUp from "../Auth_firebase/SignUp";
+import { Outlet } from "react-router-dom"
+import {Link} from "react-router-dom";
 
+function Login() {
 
-function Login({onToggleComponents}) {
-    const [showLogin, setShowLogin] = useState(true);
-
-    const handleSwitchSection = () => {
-        setShowLogin(!showLogin);
-    };
     return (
         <>
             <div className="application">
@@ -21,31 +15,14 @@ function Login({onToggleComponents}) {
                         <div className='SignIn_bg'>
                         </div>
                         <div className='SignIn'>
-                            <button className='btn_landing' onClick={onToggleComponents}>Landing Page</button>
+                            <Link to={"/"} className='btn_landing' >Landing Page</Link>
 
 
-                            <div>
-                                {showLogin ? (
-                                    <div>
-                                        {<SignIn/>}
-                                        <p className='sign_in_create_text'>Don't have an account yet?
-                                            <span onClick={handleSwitchSection}
-                                                  className='btn_create'>&nbsp;Create Account</span>
-                                        </p>
-                                    </div>
-                                ) : (
-
-                                    <div>
-                                        {<SignUp/>}
-                                        <button className='btn_back_log_in' onClick={handleSwitchSection}>Back to Login</button>
-                                    </div>
-
-                                )}
+                          <Outlet/>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </>
     )
 }
