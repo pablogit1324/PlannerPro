@@ -10,7 +10,7 @@ function RequireAuth() {
         if (!authUser) {
             navigate("/login/signin")
         }
-    }, [])
+    })
 
     return (
 <Outlet />
